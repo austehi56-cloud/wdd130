@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 nav {
     background-color: darkblue;
     padding: 10px;
@@ -19,6 +25,7 @@ img {
 
 p {
     padding: 0px;
+    margin: 1rem;
 }
 
 h1 {
@@ -45,12 +52,26 @@ aside img {
     height: auto;
 }
 
+aside {
+    width: 20em;
+    text-align: center;
+    position: relative;
+}
+
+aside h2 {
+    position: absolute;
+    top: 65px;
+    left: 150px;
+}
+
 main img {
     width: 150px;
     height: auto;
     border: 1px solid black;
     padding: 0.5rem;
     box-shadow: 0 0 30px rgb(114, 108, 108);
+    float: right;
+    margin: 0 0 1rem 1rem;
 
 }
 
@@ -72,6 +93,15 @@ footer {
     --border: 1px solid rgb(0 0 0/ 0.1);
 }
 
+.box {
+    margin: 1rem;
+    border: 1px solid rgb(0 0 0 / 10%);
+    padding: 1rem;
+    background-color: #ddd;
+    color: #000;
+}
+
+/* Class Selectors */
 /* some example variable use in the declarations.*/
 /*h1 {
     background-color: var(--heading-background-color);
