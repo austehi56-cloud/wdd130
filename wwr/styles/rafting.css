@@ -34,19 +34,25 @@ footer {
     ;
 }
 
-h1,
 h2 {
     font-family: var(--heading-font);
     color: var(--secondary-color);
 }
 
+h1 {
+    font-family: var(--heading-font);
+    color: var(--secondary-color);
+    position: absolute;
+}
+
 .hero h1 {
-    position: relative;
+    position: absolute;
 }
 
 .hero article {
     margin: 35px;
     padding: 10px;
+    position: relative;
 }
 
 nav,
