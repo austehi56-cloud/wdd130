@@ -37,7 +37,16 @@ footer {
 h1,
 h2 {
     font-family: var(--heading-font);
-    color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+.hero h1 {
+    position: relative;
+}
+
+.hero article {
+    margin: 35px;
+    padding: 10px;
 }
 
 nav,
