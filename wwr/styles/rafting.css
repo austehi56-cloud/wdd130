@@ -33,7 +33,7 @@ footer {
     color: var(--accent1-color);
 }
 
-*/ h1,
+h1,
 h2 {
     font-family: var(--heading-font);
     color: var(--primary-color);
@@ -61,7 +61,7 @@ article {
     height: auto;
 }
 
-*/ nav img {
+nav img {
     width: 150px;
     height: auto;
     border: 1px solid black;
