@@ -30,7 +30,8 @@ header,
 main,
 footer {
     width: 840;
-    color: var(--accent1-color);
+    margin: auto;
+    ;
 }
 
 h1,
@@ -48,7 +49,7 @@ article {
 }
 
 .socialmedia a {
-    text-decoration: 8px;
+    text-decoration: none;
 }
 
 .hero {
