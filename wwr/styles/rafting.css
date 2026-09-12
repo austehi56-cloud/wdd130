@@ -10,7 +10,7 @@
 
 }
 
-/header {
+header {
     background-color: var(--primary-color);
     color: var(--accent2-color);
 }
@@ -71,7 +71,7 @@ nav img {
     margin: 0 0 1rem 1rem;
 }
 
-nav a {
+header a {
     color: ;
     display: block;
     padding: 0px;
