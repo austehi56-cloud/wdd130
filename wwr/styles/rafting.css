@@ -55,6 +55,10 @@ h1 {
     position: relative;
 }
 
+.hero article img {
+    float: right;
+}
+
 nav,
 p,
 section,
