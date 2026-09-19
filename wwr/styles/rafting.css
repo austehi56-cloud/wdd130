@@ -84,9 +84,9 @@ article {
 nav img {
     width: 150px;
     height: auto;
-    border: 1px solid black;
+    border: 1px solid green;
     padding: 0.5rem;
-    box-shadow: 0 0 30px rgb(114, 108, 108);
+    box-shadow: 0 0 30px rgb(108, 108, 114);
     float: left;
     margin: 0 0 1rem 1rem;
 }
