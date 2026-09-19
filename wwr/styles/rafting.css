@@ -132,3 +132,28 @@ aside {
     grid-column: 1/2;
     grid-row: 1/2;
 }
+
+main section {
+    display: flex;
+    align-items: center;
+
+}
+
+section figure {
+    width: 300px;
+    flex: 1 1 auto;
+
+}
+
+figure img {
+    width: 200px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    height: auto;
+    margin: 10px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+
+}
