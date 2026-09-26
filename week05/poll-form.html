@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="styles/poll-form.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <h2>WDD 130 | HTML form - User Poll</h2>
+        <form>
+            <h1>Contact Information</h1>
+            <div class="form-item">
+                <label for="fullname">Full Name</label>
+                <input type="text" id="fullname" name="fullname" required>
+            </div>
+            <div class="form-item column1">
+                <label for="fullname">Full Name</label>
+                <input type="text" id="fullname" name="fullname" required>
+            </div>
+            <div class="form-item column2">
+                <label for="Useremail">Email:</label>
+                <input type="email" id="useremail" name="useremail" required>
+            </div>
+            <label for="quantity">Select Quantity</label>
+            <select name="quantity" id="quantity">
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">three</option>
+            </select>
+        </form>
+    </header>
+    <main>
+        <h1>Questions</h1>
+        <label for="browse">what is your favorite internet browser</label>
+        <select id="browser" name="browser">
+            <option value="chrome">chrome</option>
+            <option value="firefox">firefox</option>
+            <option value="edge">Edge</option>
+            <option value="brave">Brave</option>
+            <option value="other">Other</option>
+        </select>
+        <label for="pet">Do you have a household pet?</label>
+        <input type="checkbox" id="pet" name="pet">
+        <label for="feedback">list the place you have live</label>
+        <textarea id="feedback" name="feedback" rows="4"
+          placeholder="Stillwater Florida, Amsterdam Netherland, Timbuktu Mali"></textarea>
+    </main>
+    <footer>
+        <button type="submit">submit poll</button>
+    </footer>
+</body>
+<footer>
+    <p> ©2026 Austin O Aigbadon Edo, Benin</p>
+</footer>
+
+</html>
