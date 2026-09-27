@@ -1,0 +1,46 @@
+  body {
+      font-family: 'Open Sans', sans-serif;
+      color: #1e293b;
+      background-color: #f8fafc;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  .font-heading {
+      font-family: 'Montserrat', sans-serif;
+  }
+
+  /* Custom styling for Google Map iframe to satisfy WDD130 rule (No inline style="border:0") */
+  .map-frame {
+      border: none;
+      width: 100%;
+      height: 280px;
+      border-radius: 0.75rem;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Custom Form Input Focus Styles */
+  .form-input:focus,
+  .form-textarea:focus {
+      outline: none;
+      border-color: #06b6d4;
+      box-shadow: 0 0 0 3px rgba(6, 182, 212, 0.25);
+  }
+
+  /* Custom Radio & Checkbox Styling */
+  input[type="radio"]:checked,
+  input[type="checkbox"]:checked {
+      accent-color: #0891b2;
+  }
+
+  /* Employee card hover transition */
+  .staff-card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .staff-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.1);
+  }
