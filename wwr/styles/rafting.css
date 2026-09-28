@@ -30,7 +30,7 @@ main p {
 }
 
 main {
-    width: 840px;
+    width: 835px;
     margin: 0;
     text-align: left;
 }
@@ -143,16 +143,16 @@ button {
 }
 
 button:hover {
-    background-color: darkgreen;
+    background-color: green;
 }
 
 footer {
     margin: 1rem auto 0;
-    width: 650px;
+    width: 645px;
     text-align: center;
     font-size: 0.8em;
     color: #333;
-    border-top: 1px solid #ccc;
+    border-top: 1px solid #bbb;
 }
 
 .form-item {
