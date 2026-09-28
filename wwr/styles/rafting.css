@@ -172,16 +172,6 @@ footer {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.08);
 }
 
-/* Image: fixed share of the row, fills card height */
-.staff-img {
-    flex: 0 0 40%;
-    width: 40%;
-    max-width: 260px;
-    height: auto;
-    object-fit: cover;
-    display: flex;
-}
-
 /* Caption: takes the remaining space, centers its content */
 .staff-caption {
     flex: 1;
