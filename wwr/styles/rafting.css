@@ -14,7 +14,6 @@ body {
 header {
     width: 830px;
     margin: 0;
-    width: 650px;
     text-align: center;
 }
 
@@ -37,7 +36,7 @@ main {
 
 form {
     text-align: right;
-    width: 650px;
+    width: 640px;
     margin: 0 auto;
     padding: 1rem;
 }
