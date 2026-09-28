@@ -4,11 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rafting Company</title>
+    <title>White Water Rafting</title>
     <meta name="description"
       content="studying Web Development and Programming in BYU-pathway Idaho, this page is create for more update on BYU_pathway news for intake">
     <meta name="author" content="Ehiremen Aigbadon">
-    <link rel="stylesheet" href="styles/about.css">
+    <link rel="stylesheet" href="styles/rafting.css">
 </head>
 
 <body>
@@ -65,16 +65,18 @@
                 </legend>
                 <div class="mt-2 space-y-3">
                     <label class="flex items-center space-x-3 cursor-pointer">
-                        <input type="radio" name="purpose" value="general" required
+                        <input type="radio" id="radio" name="purpose" value="general" required
                           class="w-4 h-4 text-cyan-600 focus:ring-cyan-500">
                         <span class="text-slate-700 font-medium">General Inquiry</span>
                     </label>
                     <label class="flex items-center space-x-3 cursor-pointer">
-                        <input type="radio" name="purpose" value="reservation" required class="">
+                        <input type="radio" id="radio" name="purpose" value="reservation" required
+                          class="">
                         <span class="font-medium">Reservation Question</span>
                     </label>
                     <label class="flex items-center">
-                        <input type="radio" name="purpose" value="website" required class="">
+                        <input type="radio" id="radio" name="purpose" value="website" required
+                          class="">
                         <span class="text-slate-700 font-medium">Website Suggestion</span>
                     </label>
                 </div>
@@ -146,10 +148,6 @@
 
     <footer>
         <p> ©2026 Austin O Aigbadon Edo, Benin</p>
-
-        <nav class="socialmedia">Social Media Contact</nav>
-    </footer>
-    <footer class="">
 
         <nav class="socialmedia">
             <a href="">

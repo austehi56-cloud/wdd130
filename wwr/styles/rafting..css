@@ -12,8 +12,7 @@ body {
 }
 
 header {
-    width: 840px;
-    margin: 0;
+    margin: 0 auto;
     width: 650px;
     text-align: center;
 }
@@ -22,21 +21,23 @@ h1 {
     margin: 1rem;
     font-size: 1.5em;
     color: navy;
-    text-align: center;
-}
-
-main p {
-    text-align: center;
-}
-
-main {
-    width: 840px;
-    margin: 0;
     text-align: left;
 }
 
+header,
+main,
+footer {
+    width: 840px;
+    margin: 0;
+}
+
+h2 {
+    margin: 1rem;
+    font-size: 1.5em;
+    color: navy;
+}
+
 form {
-    text-align: right;
     width: 650px;
     margin: 0 auto;
     padding: 1rem;
@@ -71,11 +72,6 @@ nav {
 
 }
 
-nav a img {
-    background-color: white;
-
-}
-
 nav a {
     float: right;
     display: block;
@@ -89,7 +85,9 @@ nav a {
 
 figure img {
     width: 200px;
-    display: grid;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
     gap: 20px;
     height: auto;
     margin: 10px;
@@ -99,11 +97,10 @@ figure img {
 
 section figure {
     width: 300px;
-    display: flex;
+    flex: 1 1 auto;
 }
 
 legend {
-    text-align: left;
     padding: 0.5rem;
     color: navy;
     font-size: 1.3em;
@@ -143,7 +140,6 @@ button {
     border-radius: .5rem;
     padding: .75rem;
     font-size: 1.2rem;
-
 }
 
 button:hover {
@@ -155,11 +151,20 @@ footer {
     width: 650px;
     text-align: center;
     font-size: 0.8em;
-    color: #333;
+    color: #777;
     border-top: 1px solid #ccc;
 }
 
 .form-item {
     display: grid;
     align-items: center;
+}
+
+.column1 {
+    grid-template-columns: 3fr 1fr;
+    margin: 0.5rem 0;
+}
+
+.column2 {
+    grid-template-columns: 1fr 2fr;
 }
