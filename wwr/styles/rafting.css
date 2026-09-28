@@ -12,7 +12,7 @@ body {
 }
 
 header {
-    width: 840px;
+    width: 830px;
     margin: 0;
     width: 650px;
     text-align: center;
@@ -148,7 +148,7 @@ button:hover {
 
 footer {
     margin: 1rem auto 0;
-    width: 645px;
+    width: 635px;
     text-align: center;
     font-size: 0.8em;
     color: #333;
