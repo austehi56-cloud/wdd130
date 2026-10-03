@@ -1,0 +1,211 @@
+/* rafting.css - shared by every page on the site */
+:root {
+  --river: #0b3c49;
+  --glacier: #eaf4f6;
+  --foam: #ffffff;
+  --safety: #e8590c;
+  --safety-dark: #c24a08;
+  --slate: #22343a;
+  --max: 1100px;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: "Trebuchet MS", "Segoe UI", Arial, sans-serif;
+  line-height: 1.6;
+  color: var(--slate);
+  background: var(--glacier);
+}
+
+h1, h2 { font-family: Georgia, "Times New Roman", serif; line-height: 1.15; }
+a { color: var(--river); }
+img { max-width: 100%; display: block; }
+
+/* Header and navigation (identical on every page) */
+.site-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem 2rem;
+  padding: 0.9rem 5%;
+  background: var(--river);
+}
+.logo {
+  color: var(--foam);
+  font-family: Georgia, serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+.site-header nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 1.5rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.site-header nav a {
+  color: var(--foam);
+  text-decoration: none;
+  padding: 0.25rem 0;
+  border-bottom: 3px solid transparent;
+}
+.site-header nav a:hover,
+.site-header nav a[aria-current="page"] { border-bottom-color: var(--safety); }
+
+a:focus-visible, button:focus-visible, input:focus-visible {
+  outline: 3px solid var(--safety);
+  outline-offset: 2px;
+}
+
+/* Hero: heading positioned over the image with position: absolute */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 70vh;
+  min-height: 380px;
+  background: var(--river);
+  overflow: hidden;
+}
+.hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.hero-text {
+  position: absolute;
+  left: 5%;
+  bottom: 12%;
+  max-width: 640px;
+  padding: 1.25rem 1.5rem;
+  color: var(--foam);
+  background: rgba(11, 60, 73, 0.78);
+  border-left: 6px solid var(--safety);
+}
+.hero-text h1 { margin: 0 0 0.5rem; font-size: clamp(1.8rem, 4.5vw, 3.2rem); }
+.hero-text p { margin: 0; font-size: 1.15rem; }
+
+/* CSS grid: purpose and offerings */
+.content-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas:
+    "about about photoa"
+    "photob offer offer";
+  gap: 1.5rem;
+  max-width: var(--max);
+  margin: 3rem auto;
+  padding: 0 5%;
+}
+.grid-about  { grid-area: about; }
+.grid-photo-a { grid-area: photoa; }
+.grid-photo-b { grid-area: photob; }
+.grid-offer  { grid-area: offer; }
+
+.grid-about, .grid-offer {
+  background: var(--foam);
+  padding: 1.75rem;
+  border-top: 5px solid var(--river);
+}
+.grid-offer { border-top-color: var(--safety); }
+.content-grid h2 { margin-top: 0; color: var(--river); }
+
+.content-grid figure { margin: 0; position: relative; min-height: 260px; }
+.content-grid figure img { width: 100%; height: 100%; object-fit: cover; background: var(--river); }
+.content-grid figcaption {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 0.4rem 0.9rem;
+  color: var(--foam);
+  background: rgba(11, 60, 73, 0.85);
+  font-size: 0.95rem;
+}
+
+.offer-list { padding-left: 1.2rem; }
+.offer-list li { margin-bottom: 0.4rem; }
+
+/* Call to action */
+.cta {
+  text-align: center;
+  padding: 3.5rem 5%;
+  color: var(--foam);
+  background: var(--river);
+}
+.cta h2 { margin: 0 0 0.5rem; font-size: clamp(1.6rem, 3.5vw, 2.4rem); }
+.cta p { max-width: 560px; margin: 0 auto 1.5rem; }
+
+.btn {
+  display: inline-block;
+  padding: 0.8rem 1.8rem;
+  border: 0;
+  border-radius: 4px;
+  background: var(--safety);
+  color: var(--foam);
+  font: bold 1.05rem "Trebuchet MS", Arial, sans-serif;
+  text-decoration: none;
+  cursor: pointer;
+}
+.btn:hover { background: var(--safety-dark); }
+
+/* Newsletter */
+.newsletter {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: center;
+  max-width: var(--max);
+  margin: 3rem auto;
+  padding: 0 5%;
+}
+.newsletter h2 { margin-top: 0; color: var(--river); }
+.newsletter form {
+  display: grid;
+  gap: 0.4rem;
+  padding: 1.5rem;
+  background: var(--foam);
+  border-top: 5px solid var(--safety);
+}
+.newsletter label { font-weight: bold; }
+.newsletter input {
+  width: 100%;
+  padding: 0.65rem;
+  margin-bottom: 0.6rem;
+  border: 2px solid #9db8bf;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+.newsletter .btn { justify-self: start; }
+
+/* Footer (identical on every page) */
+.site-footer {
+  padding: 2rem 5%;
+  text-align: center;
+  color: var(--foam);
+  background: var(--slate);
+}
+.site-footer p { margin: 0.25rem 0; }
+.site-footer ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.25rem 1.5rem;
+  margin: 1rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+.site-footer a { color: var(--foam); }
+
+/* Small screens */
+@media (max-width: 720px) {
+  .content-grid {
+    grid-template-columns: 1fr;
+    grid-template-areas: "about" "photoa" "offer" "photob";
+  }
+  .newsletter { grid-template-columns: 1fr; }
+  .hero-text { left: 0; right: 0; bottom: 0; max-width: none; }
+}
